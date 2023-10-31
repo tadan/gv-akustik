@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GV Akustik Karlshamn</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        min-height: 100vh;
+        background-color: #d1e3ba;
+        font-family: 'Roboto Condensed', sans-serif;
+      }
+      button {
+        margin: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      .buttons-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap; /* Allows buttons to wrap to the next line - good for responsiveness */
+      }
+      .button-link {
+        display: inline-flex;
+        align-items: center;
+        padding: 10px 20px;
+        font-size: 1em;
+        font-weight: 600;
+        text-decoration: none;
+        color: black;
+        background-color: white;
+        transition: background-color 0.3s, color 0.3s;
+      }
+      .button-link:not(:first-child) {
+        margin-left: 2rem;
+      }
+
+      .button-link svg {
+        width: 24px;
+        height: 24px;
+        margin-right: 10px;
+      }
+
+      .button-link:hover {
+        background-color: #719244; /* bg color while hovering */
+        color: #fff;
+      }
+      .container {
+        text-align: center;
+        margin-top: 50px; /* Creates space between Lottie and text content */
+      }
+      .lottie-animation {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 15em;
+      }
+      .lottie-container {
+        text-align: center;
+        margin-top: -200px;
+      }
+      hr {
+        height: 3px;
+        background-color: #333;
+        border: none;
+        margin: 3em 7em;
+      }
+      h1 {
+        font-size: clamp(1.5em, 4vw, 4em);
+      }
+
+      h3 {
+        font-size: clamp(0.7em, 3vw, 1.5em);
+        font-weight: lighter;
+      }
+
+      @media only screen and (max-width: 600px) {
+        .buttons-container {
+          flex-direction: column; /* Stacks buttons vertically */
+          align-items: center; /* Center aligns buttons */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="lottie-container">
+      <div class="lottie-animation">
+        <script
+          src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+          type="module"
+        ></script>
+
+        <dotlottie-player
+          src="https://lottie.host/e986039b-dd46-4c6c-a660-be531278bf33/TXZYVkoctV.json"
+          background="transparent"
+          speed="1"
+          style="width: 300px; height: 300px;"
+          loop
+          autoplay
+        ></dotlottie-player>
+      </div>
+    </div>
+    <div class="container">
+      <h1>Under uppbyggnad</h1>
+      <hr />
+      <h3>För mer information tveka inte kontakta oss</h3>
+      <div class="buttons-container">
+        <a class="button-link" href="tel:+46767665636">
+          <svg
+            width="23"
+            height="22"
+            viewBox="0 0 23 22"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              id="Intersect"
+              d="M7.03859 1.74614C6.3054 1.17966 5.25442 1.26985 4.65719 1.97823C4.15574 2.57302 3.9588 2.96666 3.08059 4.06521C1.44093 6.11625 1.44093 9.0861 3.08965 11.1299C4.30676 12.6386 5.58288 14.161 7.00943 15.5876C8.43598 17.0141 9.95838 18.2902 11.4671 19.5073C13.5109 21.1561 16.4807 21.1561 18.5318 19.5164C19.65 18.6224 20.0289 18.4436 20.6424 17.9213C21.3237 17.3413 21.435 16.3345 20.9016 15.6161C19.9186 14.2919 18.695 13.0662 17.5761 11.8752C17.1937 11.4682 16.5575 11.4461 16.1301 11.8055C15.675 12.1882 15.6111 12.1772 14.7367 12.997C12.3906 11.6029 10.9687 10.1637 9.59998 7.86033C10.4229 6.98254 10.4114 6.91893 10.798 6.45957C11.1572 6.03285 11.1356 5.39741 10.727 5.01773C9.53998 3.91469 8.32849 2.74274 7.03859 1.74614Z"
+              fill="#D1E3BA"
+              stroke="#213721"
+              stroke-width="2"
+              stroke-linejoin="round"
+            />
+          </svg>
+          0767 - 665 636
+        </a>
+        <a class="button-link" href="mailto:info@gvakustik.se">
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g id="Group 132">
+              <path
+                id="Intersect"
+                d="M1.49595 15.8203C1.61415 16.7782 2.38408 17.5325 3.34424 17.6306C5.48074 17.8487 7.70916 18.1172 10 18.1172C12.2908 18.1172 14.5193 17.8487 16.6558 17.6306C17.6159 17.5325 18.3859 16.7782 18.504 15.8203C18.7349 13.9494 19 12.0012 19 10C19 7.99882 18.7349 6.05063 18.504 4.17974C18.3859 3.22185 17.6159 2.4675 16.6558 2.36945C14.5193 2.15129 12.2908 1.88281 10 1.88281C7.70916 1.88281 5.48074 2.15129 3.34424 2.36945C2.38407 2.46749 1.61415 3.22185 1.49595 4.17974C1.26511 6.05063 1 7.99882 1 10C1 12.0012 1.26511 13.9494 1.49595 15.8203Z"
+                fill="#D1E3BA"
+                stroke="#213721"
+                stroke-width="2"
+                stroke-linejoin="round"
+              />
+              <path
+                id="Vector 15"
+                d="M1.44629 4.53516L8.7622 10.3035C9.48844 10.8761 10.5126 10.8761 11.2388 10.3035L18.5547 4.53516"
+                stroke="#213721"
+                stroke-width="2"
+                stroke-linejoin="round"
+              />
+            </g>
+          </svg>
+          info@gvakustik.se
+        </a>
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.8/lottie.min.js"
+      integrity="sha512-+Oe5CXJ4IjNS0Ld6syvjNP3uNzFIRLpOW4HxwXf2Ieb+EOuhYJXsTzovylA50lrfp1Ue+v3CJq9hHrQOTfHCsA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>
